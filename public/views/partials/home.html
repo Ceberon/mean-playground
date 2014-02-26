@@ -1,1 +1,21 @@
 <h1>This is the home page :)</h1>
+<h2>Links to examples are here</h2>
+
+<table class="table table-hover">
+    <thead>
+    <td>Name</td>
+    <td>Date Started</td>
+    <td>Date Finished</td>
+    <td>Last Updated</td>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="example in examples">
+    <td>{{ example.name }}</td>
+    <td>{{ example.dateStart | date:'medium' }}</td>
+    <td>{{ example.dateEnd }}</td>
+    <td>{{ example.dateLastModified }}</td>
+    <td><a type="button" class="btn btn-primary btn-block" href="{{ example.url }}">GO</a></td>
+    </tr>
+    </tbody>
+</table>

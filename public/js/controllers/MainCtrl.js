@@ -3,6 +3,13 @@
  */
 angular.module('MainController', []).controller('MainController', function ($scope) {
 
-    $scope.tagline = 'To the moon and back!';
+    $scope.examples = [ {
+        name: 'Guessing Game',
+        dateStart: new Date(2014, 1, 25, 21, 19, 0, 0),
+        dateEnd: null,
+        dateLastModified: null,
+        url: '/guess'
+    } ];
+
 
 });
